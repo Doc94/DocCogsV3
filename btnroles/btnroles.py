@@ -69,7 +69,7 @@ class BtnRoles(commands.Cog):
         if role.id in [r.id for r in inter.author.roles]:
             await inter.author.remove_roles(role)
             return await inter.reply(
-                f"🙃 ¡Se ha removido el rol `{role}` que tenias asignado!",
+                f"🙃 ¡Se ha removido el rol `{role}`!",
                 ephemeral=True,
                 delete_after=20)
 
